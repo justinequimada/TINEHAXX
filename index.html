@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TINEHAXX</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:#080b12;
+  color:white;
+  font-family:Arial,sans-serif;
+  display:flex;
+  justify-content:center;
+  padding:25px 12px;
+}
+.menu{
+  width:100%;
+  max-width:390px;
+  background:#151b27;
+  border:1px solid #34445c;
+  border-radius:16px;
+  padding:20px;
+  box-shadow:0 0 25px #0066ff33;
+}
+h1{text-align:center;color:#36a3ff}
+.sub{text-align:center;color:#8999ad;font-size:12px}
+.item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#222c3c;
+  padding:16px;
+  margin:12px 0;
+  border-radius:10px;
+}
+.switch{
+  width:48px;
+  height:25px;
+  accent-color:#168cff;
+}
+button{
+  width:100%;
+  padding:14px;
+  border:0;
+  border-radius:9px;
+  background:#087bea;
+  color:white;
+  font-weight:bold;
+}
+#status{text-align:center;color:#41d99a}
+</style>
+</head>
+<body>
+<div class="menu">
+  <h1>TINEHAXX</h1>
+  <p class="sub">ROS LEGACY • MENU DEMO</p>
+
+  <div class="item">
+    <span>AIMBOT</span>
+    <input class="switch" type="checkbox">
+  </div>
+
+  <div class="item">
+    <span>ESP</span>
+    <input class="switch" type="checkbox">
+  </div>
+
+  <div class="item">
+    <span>NO RECOIL</span>
+    <input class="switch" type="checkbox">
+  </div>
+
+  <div class="item">
+    <span>CROSSHAIR</span>
+    <input class="switch" type="checkbox">
+  </div>
+
+  <button onclick="activate()">ACTIVATE DEMO</button>
+  <p id="status">STATUS: OFF</p>
+</div>
+
+<script>
+function activate(){
+ document.getElementById("status").textContent =
+ "STATUS: DEMO ACTIVATED";
+}
+</script>
+</body>
+</html>
